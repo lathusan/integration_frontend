@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 
-class FeedBack extends Component {
+// class FeedBack extends Component {
 
-    constructor(props) {
-        super(props)
+//     constructor(props) {
+//         super(props)
 
-        this.state = {
-            feedback: []
-        }
-    }
+//         this.state = {
+//             feedback: []
+//         }
+//     }
 
 
-}
+// }
 
-const feed = () => {
+const FeedBack = () => {
     return (
 
         <div className="container">
@@ -24,8 +24,8 @@ const feed = () => {
                 </div>
             </div>
 
-{
-    this.state.feedback.map(
+{/* {
+    this.state.feedback.map( */}
 
             <div className="col-lg-12 text-center container " style={{ marginBlockStart: '20px', width: '800px', height: '500px', border: "Solid", borderColor: '#800066', fontFamily: 'Trebuchet MS', fontSize: '30px' }}>
                 <br />
@@ -34,7 +34,7 @@ const feed = () => {
                     method="post"
                     id="contactForm"
                     style={{ marginBlockStart: '20px' }}
-                    key = {feedback.id}
+                    // key = {feedback.id}
                 >
                     <div className="col-md-6">
                         <div className="form-group" style={{ borderColor: ' #cc66ff', fontSize: '50px', width: '700px', fontFamily: 'Trebuchet MS' }}>
@@ -47,7 +47,7 @@ const feed = () => {
                                 placeholder="Enter your name"
                                 required="required"
                                 style={{ marginBlockStart: '20px', borderColor: ' #cc66ff', fontSize: '20px', width: '700px', fontFamily: 'Trebuchet MS', color: '#00004d' }}
-                                key = {feedback.name}
+                            //    key = {feedback.name}
                             />
                         </div>
                         <div className="form-group">
@@ -59,7 +59,7 @@ const feed = () => {
                                 required="required"
                                 placeholder="Enter email address"
                                 style={{ marginBlockStart: '30px', borderColor: ' #cc66ff', fontSize: '20px', width: '700px', fontFamily: 'Trebuchet MS', color: '#00004d' }}
-                                key = {feedback.emailId}
+                            //    key = {feedback.emailId}
                             />
                         </div>
 
@@ -72,7 +72,7 @@ const feed = () => {
                                 required="required"
                                 placeholder="Enter Phone Number"
                                 style={{ marginBlockStart: '30px', borderColor: ' #cc66ff', fontSize: '20px', width: '700px', fontFamily: 'Trebuchet MS', color: '#00004d' }}
-                                key = {feedback.phoneNumber}
+                            ///    key = {feedback.phoneNumber}
                             />
                         </div>
 
@@ -84,7 +84,7 @@ const feed = () => {
                                 rows={2}
                                 placeholder="Enter Message"
                                 style={{ marginBlockStart: '30px', borderColor: '#cc66ff', fontSize: '20px', width: '700px', fontFamily: 'Trebuchet MS', color: '#00004d' }}
-                                key = {feedback.message}
+                            //    key = {feedback.message}
                             />
                         </div>
                         <button
@@ -99,8 +99,8 @@ const feed = () => {
                 </form>
             </div>
     
-    ) 
-}
+    {/* ) 
+} */}
 
         </div>
     )
